@@ -49,9 +49,7 @@ if(alarmTime==`${h}:${m} ${ampm}`){
     music.play();
     music.loop=true;
     isSet=true;
-    document.getElementById("col1").disabled = true;
-    document.getElementById("col2").disabled = true;
-    document.getElementById("col3").disabled = true;
+    
 }
 }, 1000);
 
@@ -73,6 +71,9 @@ function setAlarm(){
         return alert("Please, Select a valid time to set Alarm!");
     }
     alarmTime = time;
+    document.getElementById("col1").disabled = true;
+    document.getElementById("col2").disabled = true;
+    document.getElementById("col3").disabled = true;
     setbtn.innerText="Clear Alarm";
 }
 setbtn.addEventListener("click" , setAlarm);
