@@ -1,4 +1,5 @@
 //Shree Ganeshaye Namah
+import music from "./assets/alarm.mp3"
 const currentTime = document.querySelector("h1") ,
 alarm=document.querySelector(".atime");
 setbtn=document.querySelector(".button");
