@@ -5,7 +5,7 @@ setbtn=document.querySelector(".button");
 selectMenu = document.querySelectorAll("select");
 
 let alarmTime="", isSet=false;
-music = new Audio("./assets/alarm.mp3");
+music = new Audio("./assets/Alarm.wav");
 
 for(let i=12; i>0;i--){
     i=i<10 ? "0" + i : i;
